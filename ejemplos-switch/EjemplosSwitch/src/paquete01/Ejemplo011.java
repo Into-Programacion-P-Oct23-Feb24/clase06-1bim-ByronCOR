@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author reroes
  */
-public class Ejemplo01 {
+public class Ejemplo011 {
 
     /**
      * @param args the command line arguments
@@ -22,48 +22,37 @@ public class Ejemplo01 {
         entrada.useLocale(Locale.US);
         System.out.println("Ingrese el nombre del día de la semana");
         String cadena = entrada.nextLine();
-
+        cadena = cadena.toLowerCase();
+       
         switch (cadena) {
-            case "Lunes":
-            case "LUNES":
+
             case "lunes":
-                System.out.printf("%s\n", cadena);
+                System.out.printf("%s\nes el primer día de la semana ", cadena);
                 break;
 
-            case "Martes":
             case "martes":
-            case "MARTES":
-                System.out.printf("%s\n", cadena);
+                System.out.printf("%s\nes el segundo día de la semana ", cadena);
                 break;
 
-            case "Miércoles":
-            case "MIÉRCOLES":
             case "miércoles":
-                System.out.printf("%s\n", cadena);
+                System.out.printf("%s\nes el tercer día de la semana ", cadena);
                 break;
 
-            case "Jueves":
-            case "JUEVES":
             case "jueves":
-                System.out.printf("%s\n", cadena);
+                System.out.printf("%s\nes el cuarto día de la semana ", cadena);
                 break;
 
-            case "Viernes":
-            case "VIERNES":
             case "viernes":
-                System.out.printf("%s\n", cadena);
+                System.out.printf("%s\nes el quinto día de la semana ", cadena);
                 break;
 
-            case "SÁBADO":
-            case "Sábado":
             case "sábado":
-                System.out.printf("%s\n", cadena);
+                System.out.printf("%s\nes el sexto día de la semana ", cadena);
                 break;
 
             case "domingo":
-            case "DOMINGO":
-            case "Domingo":
-                System.out.printf("%s\n", cadena);
+
+                System.out.printf("%s\nes el septimo día de la semana ", cadena);
                 break;
 
             default:
