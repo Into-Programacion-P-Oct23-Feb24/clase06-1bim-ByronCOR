@@ -16,6 +16,7 @@ public class Ejemplo02 {
         
         pais = "Ecuador";
         char letra = pais.charAt(0);
+        // charAt sirve para seleccionar o acceder a un caracter de cierta variable de tipo cadena
         System.out.printf("%s\n", letra);
         
     }
